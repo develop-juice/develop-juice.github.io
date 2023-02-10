@@ -1,0 +1,16 @@
+{
+  "name": "Do not",
+  "short_name": "Do not",
+  "description": "",
+  "icons": [
+    {
+      "src": "icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
