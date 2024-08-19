@@ -280,34 +280,34 @@
         function createVehicle(pos, quat) {
           // Vehicle contants
 
-          var chassisWidth = 1.8;
-          var chassisHeight = 0.6;
-          var chassisLength = 5;
-          var massVehicle = 800;
+          var chassisWidth = 1.2; // 1.8;
+          var chassisHeight = 0.2; // .6;
+          var chassisLength = 4; // 4;
+          var massVehicle = 800; //  800;
 
-          var wheelAxisPositionBack = -2;
-          var wheelRadiusBack = 0.4;
-          var wheelWidthBack = 0.3;
-          var wheelHalfTrackBack = 1.2;
-          var wheelAxisHeightBack = 0.3;
+          var wheelAxisPositionBack = -3; // -1;
+          var wheelRadiusBack = 0.4; // .4;
+          var wheelWidthBack = 0.5; // .3;
+          var wheelHalfTrackBack = 1; // 1;
+          var wheelAxisHeightBack = 0.5; // .3;
 
-          var wheelAxisFrontPosition = 2.5;
-          var wheelHalfTrackFront = 1.2;
-          var wheelAxisHeightFront = 0.3;
-          var wheelRadiusFront = 0.4;
-          var wheelWidthFront = 0.2;
+          var wheelAxisFrontPosition = 1.7; // 1.7;
+          var wheelHalfTrackFront = 1; // 1;
+          var wheelAxisHeightFront = 0.5; // .3;
+          var wheelRadiusFront = 0.4; // .35;
+          var wheelWidthFront = 0.5; // .2;
 
-          var friction = 1000;
-          var suspensionStiffness = 20.0;
-          var suspensionDamping = 2.3;
-          var suspensionCompression = 4.4;
-          var suspensionRestLength = 0.6;
-          var rollInfluence = 0.2;
+          var friction = 1000; // 1000;
+          var suspensionStiffness = 20.0; // 20.0;
+          var suspensionDamping = 2.3; // 2.3;
+          var suspensionCompression = 4.4; // 4.4;
+          var suspensionRestLength = 0.6; // 0.6;
+          var rollInfluence = 0.2; // 0.2;
 
-          var steeringIncrement = 0.03;
-          var steeringClamp = 0.5;
-          var maxEngineForce = 8000;
-          var maxBreakingForce = 100;
+          var steeringIncrement = 0.01; // .04;
+          var steeringClamp = 0.2; // .5;
+          var maxEngineForce = 8000; // 2000;
+          var maxBreakingForce = 100; // 100;
 
           // Chassis
           var geometry = new Ammo.btBoxShape(
@@ -505,9 +505,9 @@
           createBox(
             new THREE.Vector3(0, -0.5, 0),
             ZERO_QUATERNION,
-            75,
+            175,
             1,
-            75,
+            175,
             0,
             2
           );
