@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      var urlForLobanof = "rootpay";
+      if (window.location.hostname == "lobanov3000.github.io") {
+        var base = document.createElement("base");
+        base.setAttribute(
+          "href",
+          `https://lobanov3000.github.io/works/${urlForLobanof}/`,
+        );
+        document.head.appendChild(base);
+      }
+      //-  else {
+      //-     var base = document.createElement("base");
+      //-     base.setAttribute("href", `/`);
+      //-     document.head.appendChild(base);
+      //- }
+    </script>
+    <title>Войти в Rootpay :: Rootpay</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="img/illustration-for-main-v2.jpg" />
+    <meta name="description" content="" />
+    <link href="css/style.css?v-1584012945204" rel="stylesheet" />
+    <link href="favicon.ico?v-8" rel="shortcut icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-148619906-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-148619906-1");
+    </script>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym",
+      );
+      ym(55463806, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/55463806"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TPLP2RX");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "289058458742964");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=289058458742964&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TPLP2RX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <section class="login-page align-content-between flex-wrap d-flex">
+      <div class="login-page__shell">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="d-flex justify-content-center">
+                <a class="login-page__logo" href=""
+                  ><img src="img/logo.svg" alt=""
+                /></a>
+              </div>
+              <div class="d-flex justify-content-center">
+                <form class="login-form" action="">
+                  <h1 class="login-form__headline">Вход</h1>
+                  <label class="login-form__label" for="login-form__contact"
+                    >Почта или номер телефона</label
+                  >
+                  <input
+                    class="login-form__input"
+                    id="login-form__contact"
+                    required=""
+                    placeholder="Ваша почта или номер телефона"
+                    type="text"
+                  />
+                  <div class="d-flex justify-content-between">
+                    <label class="login-form__label" for="login-form__password"
+                      >Пароль</label
+                    ><a class="login-form__forgot-password" href="#"
+                      >Забыли пароль?</a
+                    >
+                  </div>
+                  <input
+                    class="login-form__input"
+                    id="login-form__password"
+                    required=""
+                    placeholder="Введите ваш пароль"
+                    type="text"
+                  />
+                  <button class="login-form__send">Войти</button>
+                </form>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p class="you-dont-have-account">
+                  У Вас нет аккаунта?
+                  <a class="you-dont-have-account__link" href="registration"
+                    >Регистрация</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login-page__shell">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="d-flex justify-content-between flex-wrap">
+                <div>
+                  <a class="login-page__privacy-policy" href="policy"
+                    >Политика конфиденциальности</a
+                  ><a class="login-page__help" href="knowledge-base">Помощь</a>
+                </div>
+                <div>
+                  <p class="login-page__all-rights-reserved">
+                    © Rootpay 2019. Все права защищены.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/common.js?v-1584012945204"></script>
+  </body>
+</html>

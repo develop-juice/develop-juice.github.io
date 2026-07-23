@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <script>
+      var urlForLobanof = "conference";
+      if (window.location.hostname == "lobanov3000.github.io") {
+        var base = document.createElement("base");
+        base.setAttribute("href", `https://lobanov.dev/work/${urlForLobanof}/`);
+        document.head.appendChild(base);
+      }
+    </script>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <meta name="description" content="desc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:title" content="Пиринговый форум MSK-IX" />
+    <link href="css/main.css?v-1568528073416" rel="stylesheet" />
+    <link href="favicon.ico?v-9" rel="shortcut icon" />
+  </head>
+  <body>
+    <div class="registration-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 offset-xl-4">
+            <form class="registration-page__shell" action="" method="POST">
+              <a class="registration-page__logo" href=""
+                ><img src="img/logo.svg"
+              /></a>
+              <div class="text-16px registration-page__text-16px_first">
+                К участию приглашаются представители организаций - клиентов и
+                партнеров, операторов связи ...
+              </div>
+              <label class="label-d" for="last-name">Фамилия *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="Введите фамилию"
+                name=""
+                id="last-name"
+                required=""
+              />
+              <label class="label-d" for="first-name">Имя *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="Введите имя"
+                name=""
+                id="first-name"
+                required=""
+              />
+              <label class="label-d" for="patronymic">Отчество</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="Введите отчество"
+                name=""
+                id="patronymic"
+              />
+              <label class="label-d" for="company">Компания *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="Введите название вашей компании"
+                name=""
+                id="company"
+                required=""
+              />
+              <label class="label-d" for="area-of-activity"
+                >Область деятельности *</label
+              >
+              <select
+                class="select-d"
+                name=""
+                id="area-of-activity"
+                required=""
+              >
+                <option selected disabled>Выберите область деятельности</option>
+                <option>Операторы связи</option>
+                <option>Контент-провайдеры</option>
+                <option>Интернет-провайдеры</option>
+                <option>Корпоративные потребители</option>
+                <option>Дата-центры</option>
+                <option>Государственные и общественные организации</option>
+                <option>Системные интеграторы</option>
+                <option>Производители и дистрибьюторы</option>
+              </select>
+              <label class="label-d" for="position">Должность *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="Укажите вашу должность"
+                name=""
+                id="position"
+                required=""
+              />
+              <label class="label-d" for="mail">Рабочий e-mail *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder="На этот адрес будет выслано подтверждение Вашей регистрации"
+                name=""
+                id="mail"
+                required=""
+              />
+              <label class="label-d" for="phone">Телефон</label>
+              <input
+                class="input-d mask-for-phone"
+                type="text"
+                placeholder="+ _ (___) ___-__-__"
+                name=""
+                id="phone"
+              />
+              <label class="label-d" for="test">Сколько будет 3 x 1 ? *</label>
+              <input
+                class="input-d"
+                type="text"
+                placeholder=""
+                name=""
+                id="test"
+                required=""
+              />
+              <div class="text-16px">
+                Нажимая кнопку "Зарегистрироваться", я предоставляю MSK-IX свое
+                <a href="#">согласие на обработку персональных данных</a>
+              </div>
+              <button class="button button_blue button_center">
+                Зарегистрироваться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/common.js?v-1568528073416"></script>
+  </body>
+</html>

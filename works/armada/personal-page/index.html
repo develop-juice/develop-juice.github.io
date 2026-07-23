@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <script>
+      var urlForLobanof = "armada";
+      if (window.location.hostname == "lobanov3000.github.io") {
+        var base = document.createElement("base");
+        base.setAttribute(
+          "href",
+          `https://lobanov3000.github.io/works/${urlForLobanof}/`,
+        );
+        document.head.appendChild(base);
+      } else {
+        var base = document.createElement("base");
+        base.setAttribute("href", `/`);
+        document.head.appendChild(base);
+      }
+    </script>
+    <meta charset="utf-8" />
+    <title>Личная страница - Armada</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="assets/og/og.png" />
+    <meta property="og:title" content="" />
+    <link href="assets/css/main.css?v-1581749321999" rel="stylesheet" />
+    <link href="favicon.ico?v-9" rel="shortcut icon" />
+  </head>
+  <body class="body">
+    <script>
+      document.body.style.opacity = "0";
+      document.body.style.transition = "1s cubic-bezier(0.9,0,0.3,1)";
+      setTimeout(() => {
+        document.body.style.opacity = "1";
+      }, 150);
+    </script>
+    <div class="navigation-pages">
+      <div class="navigation-pages__shell">
+        <a href="" onclick="routeAnimation(event)">Главная страница</a
+        ><a href="about" onclick="routeAnimation(event)">О нас</a
+        ><a href="customers" onclick="routeAnimation(event)">Клиенты </a
+        ><a href="news" onclick="routeAnimation(event)">Новости</a
+        ><a href="content" onclick="routeAnimation(event)">Новость</a
+        ><a href="personal-page" onclick="routeAnimation(event)"
+          >Личная страница</a
+        ><a href="price" onclick="routeAnimation(event)">Прайс</a
+        ><a href="service" onclick="routeAnimation(event)">Услуга</a
+        ><a href="services" onclick="routeAnimation(event)">Услуги</a
+        ><a href="contact-page" onclick="routeAnimation(event)"
+          >Страница контактов</a
+        >
+      </div>
+      <button class="navigation-pages__button" onclick="openNavigationPages()">
+        <img src="assets/tmp/burger.svg" />
+      </button>
+    </div>
+    <div class="body__header">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="header__shell">
+                <div>
+                  <a
+                    class="header__logo"
+                    href="/"
+                    onclick="routeAnimation(event)"
+                    ><img
+                      class="header__logo__picture"
+                      src="assets/img/logo_blue.svg"
+                      data-load-animation="true"
+                      data-style="translate"
+                      data-value="0, 20px"
+                      data-delay="500"
+                    /><span
+                      class="header__logo__text"
+                      data-load-animation="true"
+                      data-style="translate"
+                      data-value="0, 20px"
+                      data-delay="800"
+                      >ARMADA <br class="br-xl br-md" />
+                      GROUP</span
+                    ></a
+                  >
+                  <div
+                    class="select-city"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="0, 20px"
+                    data-delay="1300"
+                  >
+                    <div class="select-city__shell">
+                      <button
+                        class="select-city__cancel"
+                        onclick="classListRemovePrefixActive('select-city')"
+                      >
+                        <img src="assets/img/cancel_grey.png" />
+                      </button>
+                      <div class="select-city__current">
+                        <span
+                          onclick="classListTogglePrefixActive('select-city')"
+                          >Выбор города</span
+                        >
+                        <button
+                          class="select-city__action"
+                          onclick="classListTogglePrefixActive('select-city')"
+                        >
+                          <img src="assets/img/arrow_bottom_blue.png" />
+                        </button>
+                      </div>
+                      <div class="select-city__cities">
+                        <button onclick="effectOfChoiceOfCity(event)">
+                          Москва
+                        </button>
+                        <button onclick="effectOfChoiceOfCity(event)">
+                          Санкт-Петербург
+                        </button>
+                        <button onclick="effectOfChoiceOfCity(event)">
+                          Екатеринбург
+                        </button>
+                        <button onclick="effectOfChoiceOfCity(event)">
+                          Петропаловск-Камчатский
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="header__burger"
+                    onclick="classListAddPrefixActive('menu')"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="0, 20px"
+                    data-delay="1600"
+                  >
+                    <span class="header__burger__text">меню</span
+                    ><span class="header__burger__lines"> </span></button
+                  ><a
+                    class="header__phone"
+                    href="tel:83432885089"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="0, 20px"
+                    data-delay="1900"
+                    >+7 (343) 288-50-89</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="menu">
+        <div class="menu__shell">
+          <div class="menu__header">
+            <div class="menu__social">
+              <p class="menu__social__text">
+                Мы в социальных сетях и месседжерах:
+              </p>
+              <div class="menu__social__links">
+                <a class="menu__social__link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 6446 6446"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        d="M3392 2931l0 -247c0,-112 31,-189 191,-189l206 0 0 -347c-36,-4 -158,-15 -299,-15 -296,0 -499,181 -499,512l0 286 -334 0 0 387 334 0 0 994 401 0 0 -994 333 0 50 -387 -383 0z"
+                      />
+                    </g></svg></a
+                ><a class="menu__social__link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 6446 6446"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        class="fil0"
+                        d="M3218 3778c307,0 556,-249 556,-557 0,-307 -249,-556 -556,-556 -307,0 -556,249 -556,556 0,308 249,557 556,557zm580 -1006c73,0 132,-59 132,-132 0,-73 -59,-132 -132,-132 -73,0 -132,59 -132,132 0,73 59,132 132,132zm258 1404c213,-150 248,-379 248,-640l0 -511c0,-38 -3,-71 -3,-106 1,-88 3,-127 -7,-214 -15,-129 -58,-237 -119,-321 -30,-42 -66,-80 -106,-112 -143,-111 -333,-131 -532,-131l-626 0c-95,0 -201,5 -289,25 -52,12 -74,20 -119,38 -15,5 -24,11 -37,17 -102,51 -188,131 -240,233 -21,40 -38,83 -47,116 -7,27 -13,55 -18,83 -13,71 -15,137 -16,209l-3 200 0 320c0,78 2,147 2,224 0,58 10,150 21,205 25,121 80,230 153,303 40,39 62,60 108,89 69,43 145,66 226,80 122,22 282,22 407,22 179,0 476,-5 553,-4l98 -6c113,-8 220,-42 316,-99 12,-7 20,-13 30,-20zm56 -800c0,129 -2,275 -24,402 -20,116 -73,197 -169,255 -34,20 -67,37 -110,47 -125,31 -269,29 -398,29l-436 0c-103,0 -243,-5 -340,-30 -109,-28 -180,-85 -233,-180 -28,-49 -27,-58 -39,-110 -18,-79 -21,-122 -24,-199 -2,-26 -3,-45 -3,-72l0 -538c0,-55 4,-101 5,-155 2,-174 55,-353 222,-435 108,-52 295,-57 415,-57l458 0c78,0 155,5 231,10 25,2 50,6 75,8 49,5 91,16 130,33 82,35 127,79 171,156 10,18 20,35 27,56 8,24 16,55 22,86 19,97 20,220 20,320l0 374zm-894 -514c199,0 360,161 360,359 0,199 -161,360 -360,360 -199,0 -360,-161 -360,-360 0,-198 161,-359 360,-359z"
+                      />
+                    </g></svg></a
+                ><a class="menu__social__link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 6446 6446"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        class="fil0"
+                        d="M2772 3330l0 0zm1192 -697l-992 895 -36 342 -164 -540 1159 -740c12,-8 28,-5 37,6 8,11 7,27 -4,37zm-119 1543l0 0zm443 -1923c-409,151 -1667,624 -2182,814 -32,12 -54,43 -53,78 2,34 25,64 58,74 231,69 534,165 534,165 0,0 141,428 215,645 9,27 30,49 59,56 28,7 58,0 79,-20l301 -285c0,0 349,255 546,396 31,22 72,28 108,14 36,-14 62,-45 70,-82 85,-398 291,-1405 368,-1767 5,-28 -4,-56 -26,-74 -21,-18 -51,-24 -77,-14z"
+                      />
+                    </g></svg></a
+                ><a class="menu__social__link" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 6446 6446"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        class="fil0"
+                        d="M2908 2728c15,0 38,-9 60,44 22,53 75,183 82,197 7,13 11,28 2,46 -9,18 -13,29 -26,44 -14,16 -28,35 -40,46 -14,14 -28,28 -12,54 15,27 69,114 148,184 102,90 188,118 215,131 26,13 42,11 57,-7 16,-17 67,-77 85,-103 18,-27 35,-22 60,-14 24,9 155,73 182,86 27,14 44,20 51,31 7,11 7,64 -15,126 -23,62 -132,121 -180,126 -49,4 -49,40 -320,-66 -272,-106 -443,-382 -456,-400 -13,-17 -109,-143 -109,-273 0,-130 69,-194 94,-221 24,-26 53,-33 71,-33 17,0 35,2 51,2zm315 -571c-591,0 -1070,475 -1070,1062 0,200 56,388 153,548l-153 522 552 -140c154,84 330,132 518,132 591,0 1070,-476 1070,-1062 0,-587 -479,-1062 -1070,-1062z"
+                      />
+                    </g></svg
+                ></a>
+              </div>
+            </div>
+            <button
+              class="menu__burger"
+              onclick="classListRemovePrefixActive('menu')"
+            >
+              <span class="menu__burger__text">скрыть</span
+              ><span class="menu__burger__lines"> </span>
+            </button>
+          </div>
+          <div class="menu__links">
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">Главная </a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">О нас </a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">адвокат</a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">услуги </a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">прайс </a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">новости</a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">клиенты и партнеры</a>
+            </div>
+            <div class="menu__link-shell">
+              <a class="menu__link" href="#">контакты </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-page">
+        <section class="screen-team-member">
+          <div
+            class="screen-team-member__background"
+            data-load-animation="true"
+            data-style="scale"
+            data-value="1.1"
+            data-delay="500"
+          ></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="screen-team-member__shell">
+                  <h1
+                    class="screen-team-member__headline"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="40px, 0"
+                    data-delay="1600"
+                  >
+                    <span
+                      >Глинястикова
+                      <span
+                        class="screen-team-member__headline__hr"
+                        data-load-animation="true"
+                        data-style="width"
+                        data-delay="2300"
+                      ></span></span
+                    ><br class="br-xl br-md" />
+                    <span
+                      >Нелли Валерьевна<span
+                        class="screen-team-member__headline__hr"
+                        data-load-animation="true"
+                        data-style="width"
+                        data-delay="2300"
+                      ></span
+                    ></span>
+                  </h1>
+                  <p
+                    class="screen-team-member__description"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="40px, 0"
+                    data-delay="1900"
+                  >
+                    Управляющий партнер, эксперт <br class="br-md" />
+                    в области налогового<br class="br-xl" />
+                    и банковского<br class="br-md" />
+                    права
+                  </p>
+                  <p
+                    class="screen-team-member__phone"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="40px, 0"
+                    data-delay="2100"
+                  >
+                    <span class="screen-team-member__phone__text"
+                      >Личный номер:</span
+                    ><a class="screen-team-member__phone__link" href="tel:900"
+                      >+7 (982) 636-36-82</a
+                    >
+                  </p>
+                  <div
+                    class="screen-team-member__social-links"
+                    data-load-animation="true"
+                    data-style="translate"
+                    data-value="40px, 0"
+                    data-delay="2300"
+                  >
+                    <a class="screen-team-member__social-link" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xml:space="preserve"
+                        version="1.1"
+                        style="
+                          shape-rendering: geometricPrecision;
+                          text-rendering: geometricPrecision;
+                          image-rendering: optimizeQuality;
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                        "
+                        viewBox="0 0 6446 6446"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g>
+                          <path
+                            d="M3392 2931l0 -247c0,-112 31,-189 191,-189l206 0 0 -347c-36,-4 -158,-15 -299,-15 -296,0 -499,181 -499,512l0 286 -334 0 0 387 334 0 0 994 401 0 0 -994 333 0 50 -387 -383 0z"
+                          />
+                        </g></svg
+                      ><span class="screen-team-member__social-link__name"
+                        >Facebook</span
+                      ></a
+                    ><a class="screen-team-member__social-link" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xml:space="preserve"
+                        version="1.1"
+                        style="
+                          shape-rendering: geometricPrecision;
+                          text-rendering: geometricPrecision;
+                          image-rendering: optimizeQuality;
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                        "
+                        viewBox="0 0 6446 6446"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g>
+                          <path
+                            class="fil0"
+                            d="M3218 3778c307,0 556,-249 556,-557 0,-307 -249,-556 -556,-556 -307,0 -556,249 -556,556 0,308 249,557 556,557zm580 -1006c73,0 132,-59 132,-132 0,-73 -59,-132 -132,-132 -73,0 -132,59 -132,132 0,73 59,132 132,132zm258 1404c213,-150 248,-379 248,-640l0 -511c0,-38 -3,-71 -3,-106 1,-88 3,-127 -7,-214 -15,-129 -58,-237 -119,-321 -30,-42 -66,-80 -106,-112 -143,-111 -333,-131 -532,-131l-626 0c-95,0 -201,5 -289,25 -52,12 -74,20 -119,38 -15,5 -24,11 -37,17 -102,51 -188,131 -240,233 -21,40 -38,83 -47,116 -7,27 -13,55 -18,83 -13,71 -15,137 -16,209l-3 200 0 320c0,78 2,147 2,224 0,58 10,150 21,205 25,121 80,230 153,303 40,39 62,60 108,89 69,43 145,66 226,80 122,22 282,22 407,22 179,0 476,-5 553,-4l98 -6c113,-8 220,-42 316,-99 12,-7 20,-13 30,-20zm56 -800c0,129 -2,275 -24,402 -20,116 -73,197 -169,255 -34,20 -67,37 -110,47 -125,31 -269,29 -398,29l-436 0c-103,0 -243,-5 -340,-30 -109,-28 -180,-85 -233,-180 -28,-49 -27,-58 -39,-110 -18,-79 -21,-122 -24,-199 -2,-26 -3,-45 -3,-72l0 -538c0,-55 4,-101 5,-155 2,-174 55,-353 222,-435 108,-52 295,-57 415,-57l458 0c78,0 155,5 231,10 25,2 50,6 75,8 49,5 91,16 130,33 82,35 127,79 171,156 10,18 20,35 27,56 8,24 16,55 22,86 19,97 20,220 20,320l0 374zm-894 -514c199,0 360,161 360,359 0,199 -161,360 -360,360 -199,0 -360,-161 -360,-360 0,-198 161,-359 360,-359z"
+                          />
+                        </g></svg
+                      ><span class="screen-team-member__social-link__name"
+                        >Instagram</span
+                      ></a
+                    ><a class="screen-team-member__social-link" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xml:space="preserve"
+                        version="1.1"
+                        style="
+                          shape-rendering: geometricPrecision;
+                          text-rendering: geometricPrecision;
+                          image-rendering: optimizeQuality;
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                        "
+                        viewBox="0 0 6446 6446"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g>
+                          <path
+                            class="fil0"
+                            d="M2772 3330l0 0zm1192 -697l-992 895 -36 342 -164 -540 1159 -740c12,-8 28,-5 37,6 8,11 7,27 -4,37zm-119 1543l0 0zm443 -1923c-409,151 -1667,624 -2182,814 -32,12 -54,43 -53,78 2,34 25,64 58,74 231,69 534,165 534,165 0,0 141,428 215,645 9,27 30,49 59,56 28,7 58,0 79,-20l301 -285c0,0 349,255 546,396 31,22 72,28 108,14 36,-14 62,-45 70,-82 85,-398 291,-1405 368,-1767 5,-28 -4,-56 -26,-74 -21,-18 -51,-24 -77,-14z"
+                          />
+                        </g></svg
+                      ><span class="screen-team-member__social-link__name"
+                        >Telegram</span
+                      ></a
+                    ><a class="screen-team-member__social-link" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xml:space="preserve"
+                        version="1.1"
+                        style="
+                          shape-rendering: geometricPrecision;
+                          text-rendering: geometricPrecision;
+                          image-rendering: optimizeQuality;
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                        "
+                        viewBox="0 0 6446 6446"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g>
+                          <path
+                            class="fil0"
+                            d="M2908 2728c15,0 38,-9 60,44 22,53 75,183 82,197 7,13 11,28 2,46 -9,18 -13,29 -26,44 -14,16 -28,35 -40,46 -14,14 -28,28 -12,54 15,27 69,114 148,184 102,90 188,118 215,131 26,13 42,11 57,-7 16,-17 67,-77 85,-103 18,-27 35,-22 60,-14 24,9 155,73 182,86 27,14 44,20 51,31 7,11 7,64 -15,126 -23,62 -132,121 -180,126 -49,4 -49,40 -320,-66 -272,-106 -443,-382 -456,-400 -13,-17 -109,-143 -109,-273 0,-130 69,-194 94,-221 24,-26 53,-33 71,-33 17,0 35,2 51,2zm315 -571c-591,0 -1070,475 -1070,1062 0,200 56,388 153,548l-153 522 552 -140c154,84 330,132 518,132 591,0 1070,-476 1070,-1062 0,-587 -479,-1062 -1070,-1062z"
+                          />
+                        </g></svg
+                      ><span class="screen-team-member__social-link__name"
+                        >WhatsUpp</span
+                      ></a
+                    ><a class="screen-team-member__social-link" href="#"
+                      ><svg
+                        version="1.1"
+                        id="Слой_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            d="M250.5,171.7c2,1.5,3.8,1.7,9,2c15.4,0.9,25.2,4.2,36.1,12.2c13.3,9.8,21.7,23.4,24.9,40.4c0.8,4.4,1.2,8.2,1.5,13.8 c0.2,3.8,0.3,5.3,1.2,6.9c1.2,2.3,3.6,3.8,6.3,4c0.3,0,0.5,0,0.8,0c2.4,0,4.7-1,6.1-2.8c1.9-2.3,1.9-4.5,1.7-9.2 c-0.5-14.5-3.7-27.6-9.4-38.8c-4.1-8-8-13.2-14.9-20c-7.4-7.2-13-11.2-21.7-15.3c-9.2-4.4-15.7-5.8-25.2-6.9 c-1.9-0.2-5.5-0.5-8-0.6c-4.8-0.2-6.6,0-8.8,1.9c-1.7,1.5-2.6,3.7-2.5,6.2C247.6,168.1,248.7,170.3,250.5,171.7z"
+                          />
+                          <path
+                            d="M298.6,234.4c0,4.1,0.3,8,4.4,10c1.1,0.6,2.6,0.9,4,0.9c1.3,0,2.5-0.2,3.4-0.7c1.6-0.8,3.3-2.6,3.9-4.2 c0.8-2.1,0.4-9.5,0.2-11.6c-1.1-9.4-4.4-18.2-9.4-25.6c-9.2-13.3-22.9-21.4-40.8-23.9c-6.1-0.9-10.6-1.2-13.2,2.8 c-2.1,3.1-1.8,7,0.6,9.8c2,2.2,4.8,2.7,7.3,2.9c7.1,0.6,15.1,2.9,20.3,5.9l0,0c6.1,3.5,11.1,8.6,14.6,14.8 C296.9,220.9,298.6,227.8,298.6,234.4z"
+                          />
+                          <path
+                            d="M283,209.3c-4-3.7-8.7-6-14.7-7.2c-1.4-0.3-3.7-0.5-5.2-0.6c-2.5-0.2-3.6-0.1-5.4,0.7c-2.2,1.1-3.7,3.1-4.2,5.5 c-0.5,2.4,0.1,4.8,1.7,6.7c1.8,2.1,3.7,2.6,7.5,3.1c6.3,0.8,9.8,2.9,11.9,7.1c1,2.1,1.6,4.5,1.9,7.9c0.3,3.2,1,5.2,3.2,6.9 c1.4,1.1,3.2,1.6,5,1.6c1.9,0,3.9-0.6,5.3-1.9l0,0c2.9-2.6,3-5.9,2.2-11C291.1,219.9,288.2,214.1,283,209.3z"
+                          />
+                          <path
+                            d="M338.2,299c-0.1-3.2-1.2-6-3.3-8.5c-2-2.3-14.6-12.3-20.2-16.1c-4.4-3-11.3-7.2-14.5-8.8c-4.8-2.4-9.6-2.8-14.3-1.2 c-1,0.3-1.8,0.7-2.5,1c-2.4,1.3-4.1,3.2-7.6,7.4c-3.7,4.4-4.4,5.3-4.4,5.3c-0.3,0.2-0.9,0.5-1.6,0.8c-2.7,1.2-7.2,0.2-14.4-3.3 c-6.1-3-11.6-6.8-17.8-12.3c-5.3-4.7-10.6-10.8-13.5-15.5c-4.1-6.6-6.6-14.2-6.6-17.7c0-1.4,0.6-3.3,1.3-4.4l0.3-0.3 c0.2-0.2,0.4-0.4,0.7-0.6c1-0.9,2.5-2.1,4-3.4c6.7-5.3,8.9-7.5,10-11.5c1.1-3.7,0.1-8.2-3-14.3c-4.7-9-19.8-28.3-26-32.4 c-1-0.6-2.7-1.5-3.9-1.9c-2.6-0.9-6.3-1.2-8.6-0.7c-3.2,0.7-6.7,2.7-14.4,8.3c-4.2,3.1-10.7,9.1-12.5,12c-4.2,7-3.1,13.1,0.7,23.2 c3.6,9.7,8.2,19.5,13.7,29l0.3,0.5c1.1,1.9,2.2,3.8,3.4,5.7l0.3,0.5c1.2,1.9,2.4,3.7,3.6,5.6l2,2.9c0.7,1.1,1.5,2.1,2.2,3.2 c1.5,2.1,3,4.2,4.6,6.2c16.9,22,36.4,39.7,59.6,54.1l1,0.6c3.4,2.1,6.9,4.1,10.6,6.1l1.4,0.8c3.8,2,7.5,3.9,11.1,5.6l1.1,0.5 c4.3,2,8.3,3.7,12.1,5.2c4.6,1.9,6.7,2.4,9.9,2.4c0.6,0,1.2,0,1.9,0c2.1-0.1,4-0.4,5.7-1c2.5-0.8,5-2,7.8-4c0.5-0.3,1-0.7,1.5-1.1 c0.6-0.5,1.3-1,2-1.6c3.2-2.8,7-6.9,10-10.9c1.6-2.1,3.7-5.3,4.8-7.9C337.9,303.9,338.3,301.4,338.2,299L338.2,299L338.2,299z"
+                          />
+                        </g></svg
+                      ><span class="screen-team-member__social-link__name"
+                        >Viber
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="white-canvas">
+                  <svg
+                    class="lines-personal lines-personal_xl"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 426 852.8"
+                    style="enable-background: new 0 0 426 852.8"
+                    xml:space="preserve"
+                  >
+                    <pattern
+                      id="pattern"
+                      patternUnits="userSpaceOnUse"
+                      width="1250"
+                      height="2400"
+                    >
+                      <image
+                        xlink:href="assets/img/lines-gold.jpg"
+                        x="0"
+                        y="0"
+                        width="1250"
+                        height="2400"
+                      ></image>
+                    </pattern>
+                    <g stroke="url(#pattern)" stroke-width="0.5" fill="none">
+                      <path
+                        class="lines-personal__path"
+                        d="M408.4,0c-2.5,18-9.7,51.4-34.9,82.5c-17,21-35,32.1-50.8,41.8c-36.6,22.6-69.3,30.2-98.3,37 c-21.2,5-53.1,12.2-94.8,11.2c-25.6-0.6-46.9-4.2-67-7.5c-3.9-0.6-33.8-7.1-39.1-8.4c-2.4-0.6-2.9-0.7-6.4-1.6 c-6.4-1.6-15.4-3.8-20.5-6.5c-2-1-3.4-2.6-3.6-2.8c-1.4-1.5-1.9-2.9-2-3.2c-0.4-1.1-0.9-2.5-0.3-3.8c0.7-1.4,2.3-1.9,3-2.1 c2-0.6,3.7-0.1,5.2,0.4c6.5,2.1,21.6,11.4,37.1,24.4c10.1,8.5,17.3,16,20.7,19.5c2.8,3,10,10.8,20.3,24.7 c11.3,15.2,18.8,27.4,20.3,30C147,316.9,171.8,357.5,207.7,397c0,0,36.6,40.3,82.7,74.7c0,0,20.6,15.4,53.3,34 c4.6,2.6,10.8,6,19.2,9.3c9,3.6,16.3,5.4,20.7,6.5c6.7,1.7,11.8,2.4,21.9,4c0.8,0.1,3.6,0.6,7.4,0.7c1.4,0,3.1-0.1,6.6-0.3 c0.2,0,1.8-0.1,3.8-0.8c1.6-0.5,2-0.9,2.3-1.4c0.3-0.6,0.4-1.4,0.1-2c-0.4-0.9-1.3-1.4-2.8-1.9c-3.3-1.1-5.7-1.3-5.7-1.3 c-3.8-0.2-6.3-0.4-9.8,0.3c-3.7,0.6-6.2,1.7-9.8,3.3c-0.4,0.2-6,2.7-10.8,5.8c-11.7,7.5-23.5,21.9-30.4,30.4 c-8.7,10.7-14.1,18.8-16.5,22.5c0,0-4.5,6.9-8.7,14.3c-28.4,50.5-46.7,129.7-46.7,129.7c-6.6,28.4-9.9,50-12.8,69 c-6.1,39.5-9.1,72.9-10.7,97.2"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    class="lines-personal lines-personal_md"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 1164 2965"
+                    style="enable-background: new 0 0 1164 2965"
+                    xml:space="preserve"
+                  >
+                    <g stroke="#481710" stroke-width="1" fill="none">
+                      <path
+                        class="lines-personal__path"
+                        d="M1098.5,0.5c-0.5,63.7-10.4,266.5-161,406c-91.9,85-194,107.5-312,132c0,0-277.6,71.4-612-12 c-16.5-4.1-37.3-15.4-42-18c-23.4-12.8-27.1-19.9-28-25c-2.1-11.6,8.3-23.5,12-26c32-21.7,269.2,184.9,457,501 c196.8,331.2,144,454.1,321,582c0,0,164.7,119,422,143c5.6,0.5,23.1,0.8,43-2c17.7-2.5,21.8-5.1,24-7c13.8-11.7,14.1-42.2,5-51 c-28-26.8-193.6,103.1-219,123c-256.6,201.2-391.8,899.6-444,1219"
+                      />
+                    </g>
+                  </svg>
+                  <div class="white-canvas__shell">
+                    <h2 class="headline-gold">
+                      <span class="headline-gold__white"
+                        ><span class="headline-gold__shell"
+                          >Специализация</span
+                        ></span
+                      >
+                    </h2>
+                    <div class="content">
+                      <div class="content__shell content__shell-1">
+                        <h3 class="content__headline content__headline-1">
+                          Уголовное право, уголовный процесс, адвокатские
+                          расследования
+                        </h3>
+                        <p class="content__desc content__desc-1">
+                          Под руководством В. Алешина уголовно-правовая практика
+                          Бюро неоднократно признавалась одной из лучших в
+                          России (Право. ру-300 за 2011, 2012, 2015 гг.). Алешин
+                          В. признан одним из ведущих юристов в области
+                          «Разрешение споров: уголовное право» (Коммерсантъ,
+                          2017, 2018), а также входит в число лучших судебных
+                          юристов в категории «Уголовные дела» (Коммерсантъ,
+                          2017, 2018).
+                        </p>
+                        <p class="content__desc content__desc-2">
+                          В. Алешин возглавляет уголовно-правовую практику Бюро
+                          и осуществляет юридическую защиту по уголовным делам в
+                          сфере экономики на всех стадиях уголовного процесса.
+                          Имеет большой опыт защиты по резонансным уголовным
+                          делам, находящимся в производстве следственных органов
+                          СКР, МВД, ГВСУ, определяет уголовно-правовую стратегию
+                          и руководит рабочими группами адвокатов по сложным
+                          уголовным делам. В 1982 г. окончил Военный
+                          Краснознамённый институт Министерства обороны СССР.
+                          Является майором юстиции в запасе, с 1982 по 1995
+                          последовательно занимал должности следователя,
+                          помощника прокурора, следователя по особо важным делам
+                          военной прокуратуры Ленинградского военного округа.
+                          Адвокат с 1996 года.
+                        </p>
+                      </div>
+                      <div class="content__shell">
+                        <h3 class="content__headline content__headline-2">
+                          <div class="content__headline__text">
+                            Состоит в Комитете по развитию женского
+                            предпринимательства “Опора России”
+                          </div>
+                          <div class="content__headline__picture">
+                            <img src="assets/tmp/logo-example.png" />
+                          </div>
+                        </h3>
+                        <div class="gallery-of-photos">
+                          <div class="owl-carousel-photos owl-carousel">
+                            <div class="item">
+                              <img src="assets/tmp/photos-slider.jpg" />
+                            </div>
+                            <div class="item">
+                              <img src="assets/tmp/photos-slider-2.jpg" />
+                            </div>
+                          </div>
+                          <div class="gallery-of-photos__author">
+                            Фотограф: <span>Андрей Козлов </span>
+                          </div>
+                        </div>
+                        <p class="content__desc content__desc-3">
+                          Комитет по развитию женского предпринимательства
+                          «ОПОРЫ РОССИИ» ведет активную деятельность по развитию
+                          женского предпринимательства путем популяризации и
+                          внедрения эффективных механизмов поддержки,
+                          направленных на развитие действующих и создание новых
+                          проектов, реализуемых женщинами –
+                          предпринимателями.<br /><br />Комитет учрежден в
+                          рамках Общероссийской общественной организации малого
+                          и среднего предпринимательства «ОПОРА РОССИИ» 3 марта
+                          2015 года.
+                        </p>
+                      </div>
+                    </div>
+                    <h2
+                      class="headline-gold headline-gold_news headline-gold_mt"
+                    >
+                      <span class="headline-gold__white"
+                        ><span class="headline-gold__shell"
+                          >Новости компании</span
+                        ><span class="headline-gold__subtitle"
+                          >С участием Нелли Валерьевны</span
+                        ></span
+                      >
+                    </h2>
+                    <div class="news">
+                      <div class="news__open-tab-one">
+                        <div class="one-news">
+                          <div class="one-news__shell">
+                            <p class="one-news__date">19.06.2019 -</p>
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <p class="one-news__description">
+                              Специалисты Армада Групп в ходе рассмотрения дела
+                              в Свердловском областном суде, удалось обосновать
+                              позицию и защитить интересы Клиента относительно
+                              возможности исчесления и взыскания налога на
+                              имущество физических лиц
+                            </p>
+                          </div>
+                          <a class="one-news__link" href="#">Подробнее</a>
+                        </div>
+                        <div class="one-news">
+                          <div class="one-news__shell">
+                            <p class="one-news__date">19.06.2019 -</p>
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <p class="one-news__description">
+                              Специалисты Армада Групп в ходе рассмотрения дела
+                              в Свердловском областном суде, удалось обосновать
+                              позицию и защитить интересы
+                            </p>
+                          </div>
+                          <a class="one-news__link" href="#">Подробнее</a>
+                        </div>
+                        <div class="one-news">
+                          <div class="one-news__shell">
+                            <p class="one-news__date">19.06.2019 -</p>
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <p class="one-news__description">
+                              Специалисты Армада Групп в ходе рассмотрения дела
+                              в Свердловском областном суде, удалось обосновать
+                              позицию и защитить интересы
+                            </p>
+                          </div>
+                          <a class="one-news__link" href="#">Подробнее</a>
+                        </div>
+                        <div class="one-news">
+                          <div class="one-news__shell">
+                            <p class="one-news__date">19.06.2019 -</p>
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <!-- получить случайное число от (min-0.5) до (max+0.5)-->
+                            <p class="one-news__description">
+                              Специалисты Армада Групп в ходе рассмотрения дела
+                            </p>
+                          </div>
+                          <a class="one-news__link" href="#">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="news__hr"></div>
+                      <a
+                        class="news__all"
+                        href="/news"
+                        onclick="routeAnimation(event)"
+                        >Все новости</a
+                      >
+                    </div>
+                    <h2
+                      class="headline-gold headline-gold_consultation headline-gold_mt"
+                    >
+                      <span class="headline-gold__white"
+                        ><span class="headline-gold__shell"
+                          >Консультация</span
+                        ></span
+                      >
+                    </h2>
+                    <form
+                      class="consultation"
+                      onsubmit="
+                        classListAddSetTimeOutStepOneTwoActive(
+                          'successful-submission',
+                          1000,
+                        );
+                        event.preventDefault();
+                      "
+                    >
+                      <input
+                        class="consultation__input"
+                        type="text"
+                        placeholder="Как к вам обращаться"
+                      />
+                      <input
+                        class="consultation__input"
+                        type="tel"
+                        placeholder="Телефон*"
+                        data-mask-for-phone
+                        required
+                        minlength="18"
+                      />
+                      <input
+                        class="consultation__input"
+                        type="mail"
+                        placeholder="E-mail*"
+                        required
+                      />
+                      <textarea
+                        class="consultation__textarea"
+                        placeholder="Введите сообщение"
+                        id="consultation__textarea"
+                      ></textarea>
+                      <div class="consultation__footer">
+                        <label class="consultation__checkbox">
+                          <input type="checkbox" required checked /><span
+                            class="consultation__checkbox__square"
+                          ></span
+                          ><span class="consultation__checkbox__text"
+                            >Я согласен на обработку
+                            <a href="./" target="_blank"
+                              >персональных данных</a
+                            ></span
+                          >
+                        </label>
+                        <button class="consultation__submit">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="body__footer">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="footer__shell">
+                <p class="footer__copyright">© Армада Групп 2019</p>
+                <p class="lepinskih">
+                  Создание сайта
+                  <a
+                    class="lepinskih__link"
+                    href="http://maxlepinskih.com"
+                    target="_blank"
+                    >Lepinskih</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="successful-submission">
+        <div class="successful-submission__shell">
+          <p class="successful-submission__headline">
+            Заявка успешно отправлена!
+          </p>
+          <a class="successful-submission__link" href=""
+            >Вернуться на главную</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/common.js?v-1581749321999"></script>
+  </body>
+</html>

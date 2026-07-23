@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.6" height="77" viewBox="0 0 76.6 77">
+  <g id="Group_2" data-name="Group 2" transform="translate(-310.4 -2311)">
+    <g id="Group_9" data-name="Group 9" transform="translate(312 2311)">
+      <g id="Group_8" data-name="Group 8">
+        <g id="Rectangle" transform="translate(3 5)" fill="#edf0ff" stroke="#edf0ff" stroke-miterlimit="10" stroke-width="3.2">
+          <rect width="72" height="72" rx="32" stroke="none"/>
+          <rect x="1.6" y="1.6" width="68.8" height="68.8" rx="30.4" fill="none"/>
+        </g>
+        <g id="Rectangle-2" data-name="Rectangle" transform="translate(5)" fill="rgba(216,216,216,0)" stroke="#2548f6" stroke-miterlimit="10" stroke-width="3.2">
+          <rect width="24" height="48" rx="12" stroke="none"/>
+          <rect x="1.6" y="1.6" width="20.8" height="44.8" rx="10.4" fill="none"/>
+        </g>
+        <path id="Path" d="M34,0V1.75a17,17,0,0,1-17,17h0a17,17,0,0,1-17-17V.152" transform="translate(0 34.25)" fill="rgba(216,216,216,0)" stroke="#2548f6" stroke-miterlimit="10" stroke-width="3.2"/>
+        <path id="Line_5" data-name="Line 5" d="M0,.5H26.5" transform="translate(3.5 23.5)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+        <path id="Line_3" data-name="Line 3" d="M1,.5v13" transform="translate(16 53)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+        <path id="Line_4" data-name="Line 4" d="M0,.5H18.5" transform="translate(8 67)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+        <circle id="Oval" cx="2" cy="2" r="2" transform="translate(20 16)" fill="#2548f6"/>
+        <circle id="Oval-2" data-name="Oval" cx="2" cy="2" r="2" transform="translate(20 10)" fill="#2548f6"/>
+        <circle id="Oval-3" data-name="Oval" cx="2" cy="2" r="2" transform="translate(14 16)" fill="#2548f6"/>
+        <circle id="Oval-4" data-name="Oval" cx="2" cy="2" r="2" transform="translate(14 10)" fill="#2548f6"/>
+      </g>
+    </g>
+  </g>
+</svg>

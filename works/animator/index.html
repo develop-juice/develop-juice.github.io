@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- seo -->
+    <title>Аниматоры в Новосибирске</title>
+    <meta name="description" content="" />
+
+    <!-- resposive -->
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- style -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css?v-198"> -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v-113" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icon/favicon-32x32.png" />
+    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
+
+    <!-- social view -->
+    <meta property="og:image" content="./img/og/vk.png" />
+    <meta property="og:title" content="Студия праздников." />
+    <!-- <meta property="og:url" content="https://site.ru" /> -->
+
+    <meta name="yandex-verification" content="3a97586a6de85a8e" />
+
+    <base href="/works/animator/" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/fon-header.png" alt="" class="header-fon" />
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 order-md-1 col-sm-6 order-sm-1 col-xs-12 order-xs-1">
+          <div class="logo">
+            <p class="logo__name">Аниматория</p>
+            <p class="logo__desc">Студия праздников в Новосибирске</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 order-md-2 col-sm-6 order-sm-2 col-xs-12 order-xs-2">
+          <a href="tel:8-999-999-99-99" class="phone">8 (999) 999-99-99</a>
+        </div>
+        <div class="col-xl-4 middle-xl end-xl col-lg-4 end-lg order-xs-3">
+          <div class="social">
+            <a target="_blank" rel="nofollow" href="" class="social__link social__link_vk"><img src="img/vk.svg" alt="" /></a
+            ><a target="_blank" rel="nofollow" href="" class="social__link"><img src="img/instagram.svg" alt="" /></a>
+          </div>
+          <button class="button message_windows-open hidden-md hidden-sm hidden-xs">Перезвоните мне</button>
+        </div>
+        <div class="col-xl-12 col-lg-9 col-md-12 order-md-3 col-sm-12 order-sm-3 col-xs-12 order-xs-4">
+          <h1 class="zagolovok-h1">
+            Аниматоры <br />в Новосибирске <br />
+            <strong>от 1500 рублей</strong>
+          </h1>
+          <a href="#characters" class="button-border">Посмотрите наших героев</a> <br />
+          <a href="#programs" class="button-border">Посмотрите наши шоу-программы</a> <br />
+          <a href="#quiz" class="button button_big">Подобрать программу</a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let arrayURI = location.search.split('&')
+      for (let index = 0; index < arrayURI.length; index++) {
+        let arrayPARAMETR = arrayURI[index].split('=')
+        if (decodeURI(arrayPARAMETR[0]) == 'utm_term') {
+          document.querySelector('.zagolovok-h1').innerHTML = decodeURI(arrayPARAMETR[1])
+        }
+      }
+    </script>
+
+    <section class="box-3" id="quiz">
+      <div class="row">
+        <div class="col-xl-10 col-xl-offset-1 col-lg-12">
+          <h2 class="zagolovok-h2">Подберите за 1 минуту <strong>индивидуальный набор программ и персонажей </strong></h2>
+        </div>
+        <div class="col-xl-10 col-xl-offset-1 col-lg-10 col-lg-offset-1">
+          <div class="quiz">
+            <div class="quiz__state">
+              <p class="number">Вопрос <span class="realy">1</span> из <span class="summ">3</span></p>
+              <div class="lines"></div>
+            </div>
+            <form class="quiz__middle form-telegram" action="/thanks/index.php" method="POST">
+              <div class="item">
+                <div class="between">
+                  <p class="question">Сколько детей будет на празднике?</p>
+                </div>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="До 10 детей" name="field-1" type="radio" /> <span class="cell"></span></span
+                  ><span> До 10 детей</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="10-20 детей" name="field-1" type="radio" /> <span class="cell"></span></span
+                  ><span> 10-20 детей</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Более 20 детей" name="field-1" type="radio" /> <span class="cell"></span></span
+                  ><span> Более 20 детей</span>
+                </label>
+              </div>
+              <div class="item">
+                <div class="between">
+                  <p class="question">Возраст детей?</p>
+                </div>
+                <label class="check-default">
+                  <span class="check-default__left"
+                    ><input value="Да" name="field-4-1" type="checkbox" /> <span class="cell"></span></span
+                  ><span> 1-3 года</span>
+                </label>
+                <label class="check-default">
+                  <span class="check-default__left"
+                    ><input value="Да" name="field-4-2" type="checkbox" /> <span class="cell"></span></span
+                  ><span> 4-6 лет</span>
+                </label>
+                <label class="check-default">
+                  <span class="check-default__left"
+                    ><input value="Да" name="field-4-3" type="checkbox" /> <span class="cell"></span></span
+                  ><span> 7-10 лет</span>
+                </label>
+                <label class="check-default">
+                  <span class="check-default__left"
+                    ><input value="Да" name="field-4-4" type="checkbox" /> <span class="cell"></span></span
+                  ><span> 9-12 лет</span>
+                </label>
+              </div>
+              <div class="item">
+                <div class="between">
+                  <p class="question">Место проведения?</p>
+                </div>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Игровая комната" name="field-3" type="radio" /> <span class="cell"></span></span
+                  ><span> Игровая комната</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Квартира / частный дом" name="field-3" type="radio" /> <span class="cell"></span></span
+                  ><span> Квартира / частный дом</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Детский сад / школа" name="field-3" type="radio" /> <span class="cell"></span></span
+                  ><span> Детский сад / школа</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Кафе / ресторан" name="field-3" type="radio" /> <span class="cell"></span></span
+                  ><span> Кафе / ресторан</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="На природе / Дача" name="field-3" type="radio" /> <span class="cell"></span></span
+                  ><span> На природе / Дача</span>
+                </label>
+              </div>
+              <div class="item">
+                <div class="between">
+                  <p class="question">Какой праздник?</p>
+                </div>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="День рождения" name="field-5" type="radio" /> <span class="cell"></span></span
+                  ><span> День рождения</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Выпускной" name="field-5" type="radio" /> <span class="cell"></span></span
+                  ><span> Выпускной</span>
+                </label>
+                <label class="radio-default">
+                  <span class="radio-default__left"
+                    ><input value="Другой праздник" name="field-5" type="radio" /> <span class="cell"></span></span
+                  ><span> Другой праздник</span>
+                </label>
+              </div>
+              <div class="item quiz__finish">
+                <p class="thank">Спасибо за ответы!</p>
+                <p class="description_small">Получите результат расчета, оставив контактный телефон:</p>
+                <input type="text" name="contact" class="input-default phone-mask" required placeholder="Телефон" />
+                <input type="text" name="phone" class="phone" />
+                <input type="submit" class="button-default button-default_small submit" value="Узнать стоимость" />
+                <p class="description-small">
+                  Нажимая "Узнать стоимость", вы соглашаетесь с <br />
+                  <button type="button" class="open-policy">политикой конфиденциальности</button>
+                </p>
+              </div>
+            </form>
+            <div class="quiz__bottom">
+              <div class="false">
+                <button type="button" class="prev prev-quiz">Назад</button>
+              </div>
+              <button type="button" class="button button_middle next-quiz">Дальше</button>
+              <div class="false"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-1" id="programs">
+      <div class="row">
+        <div class="col-xl-8 col-xl-offset-2">
+          <h2 class="zagolovok-h2">Каждая наша программа - <strong>это микс из незабываемых впечатлений</strong></h2>
+        </div>
+        <div class="col-xl-12">
+          <div class="tariffs">
+            <div class="tariff">
+              <div class="tariff__white">
+                <div class="tariff__white__img">
+                  <img
+                    class="tariff__white__img"
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/provedenie_900x600.jpg"
+                    alt="Сюрприз Мини"
+                  />
+                </div>
+                <p class="tariff__white__name">Сюрприз Мини</p>
+                <ul>
+                  <li>Сюрпризное появление любимого персонажа</li>
+                  <li>Поздравление именинника</li>
+                  <li>Игры (1-2 игры)</li>
+                  <li>Общее фото</li>
+                </ul>
+                <button class="button button_small message_windows-open">Выбрать программу</button>
+              </div>
+              <div class="tariff__red">
+                <p class="tariff__red__sale">1800</p>
+                <p class="tariff__red__price">1500<span>рублей</span></p>
+              </div>
+              <p class="tariff__time">20 минут</p>
+            </div>
+            <div class="tariff">
+              <div class="tariff__white">
+                <div class="tariff__white__img">
+                  <img
+                    class="tariff__white__img"
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/tariff-1.png"
+                    alt="Сюрприз Макси"
+                  />
+                </div>
+                <p class="tariff__white__name">Сюрприз Макси</p>
+                <ul>
+                  <li>Сюрпризное появление любимого персонажа</li>
+                  <li>Поздравление именинника</li>
+                  <li>Игровая программа</li>
+                  <li>Фигурки из шариков в подарок каждому ребенку (до 10 детей)</li>
+                  <li>Вынос торта</li>
+                  <li>Общее, индивидуальное фото</li>
+                </ul>
+                <button class="button button_small message_windows-open">Выбрать программу</button>
+              </div>
+              <div class="tariff__red">
+                <p class="tariff__red__sale">3000</p>
+                <p class="tariff__red__price">2500<span>рублей</span></p>
+              </div>
+              <p class="tariff__time">60 минут</p>
+            </div>
+            <div class="tariff">
+              <div class="tariff__white">
+                <div class="tariff__white__img">
+                  <img
+                    class="tariff__white__img"
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/SHou-myilnyih-puzyirey-35s079c8riwua6mp3og7wq-2x.jpg"
+                    alt="Шум-гам Мини"
+                  />
+                </div>
+                <p class="tariff__white__name">Шум-гам Мини</p>
+                <ul>
+                  <li>Сюрпризное появление любимого персонажа</li>
+                  <li>Поздравление именинника</li>
+                  <li>Тематическая игровая программа</li>
+                  <li>Целое море мыльных пузырей</li>
+                  <li>Дискотека</li>
+                  <li>Вынос торта</li>
+                  <li>Общее, индивидуальное фото.</li>
+                </ul>
+                <button class="button button_small message_windows-open">Выбрать программу</button>
+              </div>
+              <div class="tariff__red">
+                <p class="tariff__red__sale">4000</p>
+                <p class="tariff__red__price">3500<span>рублей</span></p>
+              </div>
+              <p class="tariff__time">60 минут</p>
+            </div>
+            <div class="tariff">
+              <div class="tariff__white">
+                <div class="tariff__white__img">
+                  <img
+                    class="tariff__white__img"
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/shou_mylnih_puzyrey.jpg"
+                    alt="Шум-гам Макси"
+                  />
+                </div>
+                <p class="tariff__white__name">Шум-гам Макси</p>
+                <ul>
+                  <li>Сюрпризное появление любимого персонажа</li>
+                  <li>Поздравление именинника</li>
+                  <li>Тематическая игровая программа</li>
+                  <li>Целое море мыльных пузырей, управление пузырями, погружение детей внутрь пузыря</li>
+                  <li>Дискотека</li>
+                  <li>Вынос торта</li>
+                  <li>Общее, индивидуальное фото</li>
+                </ul>
+                <button class="button button_small message_windows-open">Выбрать программу</button>
+              </div>
+              <div class="tariff__red">
+                <p class="tariff__red__sale">5000</p>
+                <p class="tariff__red__price">4500<span>рублей</span></p>
+              </div>
+              <p class="tariff__time">60 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-2">
+      <div class="row">
+        <div class="col-xl-8 col-xl-offset-2">
+          <h2 class="zagolovok-h2">Выберите <strong>индивидуальную программу</strong></h2>
+        </div>
+        <div class="col-xl-10 col-xl-offset-1">
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Шоу мыльных пузырей</p>
+              <ul>
+                <li>Создание мыльных пузырей от малипусеньких до гигантских</li>
+                <li>Трюки с пузырями</li>
+                <li>Управление пузырями</li>
+                <li>Погружение внутри пузыря</li>
+                <li>Ракетки разных размеров и форм</li>
+                <li>Волшебные перчатки</li>
+                <li>Музыкальное сопровождение (профессиональная аппаратура, микрофон)</li>
+                <li>Абсолютное участие детей</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/puzyiri6.jpg"
+                  alt="Шоу мыльных пузырей"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">4000</p>
+              <p class="program__red__price">3500<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 30 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Бумажное шоу</p>
+              <ul>
+                <li>Настоящее бумажное безумие</li>
+                <li>Тонны бумаги</li>
+                <li>Безудержное веселье</li>
+                <li>Огромнейшие сугробы и облака</li>
+                <li>Зажигательная музыка (профессиональная аппаратура, микрофон)</li>
+                <li>Море смеха и веселья</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/27.jpg"
+                  alt="Бумажное шоу"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">4500</p>
+              <p class="program__red__price">4000<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 30 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Серебряное шоу</p>
+              <ul>
+                <li>Невероятное сияние и нереальные эмоции</li>
+                <li>Тонны фольги</li>
+                <li>Безудержное веселье</li>
+                <li>Искристые, серебристые сугробы и облака</li>
+                <li>Зажигательная музыка (профессиональная аппаратура, микрофон)</li>
+                <li>Море смеха и веселья</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/341_original.jpg"
+                  alt="Серебряное шоу"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">6000</p>
+              <p class="program__red__price">5000<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 30 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Научное шоу</p>
+              <ul>
+                <li>Научные тайны и эксперименты:</li>
+                <li>снег в жару,</li>
+                <li>огонь из ничего,</li>
+                <li>дым без огня бывает и многие другие</li>
+                <li>Сумасшедшие игры</li>
+                <li>Музыкальное сопровождение</li>
+                <li>Общее фото</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/phote-2.png"
+                  alt="Научное шоу"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">4000</p>
+              <p class="program__red__price">3500<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 30 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Фокусы</p>
+              <ul>
+                <li>Удивительные магические ДЕТСКИЕ фокусы</li>
+                <li>Завораживающая атмосфера</li>
+                <li>Необычный, волшебный, яркий реквизит</li>
+                <li>Музыкальное сопровождение</li>
+                <li>Фокус от именинника</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/zay3.jpg"
+                  alt="Фокусы"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">4000</p>
+              <p class="program__red__price">3500<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 40 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Квесты</p>
+              <ul>
+                <li>Завораживающая атмосфера</li>
+                <li>Уникальный реквизит</li>
+                <li>Прятки в темноте, переправы, лабиринты и другие «страшнючие, ползучие, невкуснючие» задания</li>
+                <li>Поиск сокровищ</li>
+                <li>Разгадка тайны</li>
+                <li>Секретные шифры и коды</li>
+                <li>Сопоставление фактов</li>
+                <li>Поиск ключа</li>
+                <li>Преодоление страха</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/piraty-40_0.jpg"
+                  alt="Квесты"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">4000</p>
+              <p class="program__red__price">3500<span>рублей</span></p>
+            </div>
+            <p class="program__time">от 40 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">SLIME SHOW</p>
+              <ul>
+                <li>Создание слайма с профессиональным слаймером</li>
+                <li>Декорирование слайма</li>
+                <li>Слайм-подарок для всех детей (до 10 детей)</li>
+                <li>Музыкальное сопровождение</li>
+                <li>Общее фото</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/9e41aef508595a80ba2c8658220859e9.jpg"
+                  alt="SLIME SHOW"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">6000</p>
+              <p class="program__red__price">5000<span>рублей</span></p>
+            </div>
+            <p class="program__time">60 минут</p>
+          </div>
+          <div class="program">
+            <div class="program__white">
+              <p class="program__white__name">Большой замес</p>
+              <ul>
+                <li>Создание большого слайма с профессиональным слаймером</li>
+                <li>Декорирование большого слайма</li>
+                <li>Слайм-подарок для всех детей</li>
+                <li>Слайм-игра</li>
+                <li>Музыкальное сопровождение</li>
+                <li>Общее фото.</li>
+              </ul>
+              <button class="button button_small message_windows-open">Выбрать программу</button>
+              <div class="program__white__img">
+                <img
+                  class="cover-image"
+                  src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/234.jpg"
+                  alt="Большой замес"
+                />
+              </div>
+            </div>
+            <div class="program__red">
+              <p class="program__red__sale">9500</p>
+              <p class="program__red__price">8000<span>рублей</span></p>
+            </div>
+            <p class="program__time">90 минут</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-4" id="characters">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12">
+          <h2 class="zagolovok-h2">Выберите понравивашегося <br /><strong>Вам персонажа </strong></h2>
+          <div class="characters">
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/kloun.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/gold.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/neon.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/ariel.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/cherepashka.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Spetsnaz.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/smurfetta.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Indejtsy.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Poni-raduga.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/minon.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/flora.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Vinks-stella.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/barboskin.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/SHpiony.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Kovboi.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Pirat.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/germiona.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+            <div class="personage">
+              <img
+                src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/Ledi-bag.jpg"
+                alt=""
+                class="personage__img zoom-js cover-image"
+              />
+              <p class="personage__name">Персонаж</p>
+              <button class="button message_windows-open">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-11">
+      <div class="row">
+        <div class="col-xl-6">
+          <h2 class="last-personage__zag">Не нашли нужного персонажа?</h2>
+          <p class="last-personage__desc">
+            На сайте показаны не все костюмы, поскольку он будет очень большой.<br /><br />
+            Оставьте ваши контакты в форме и я подскажу есть ли нужный вам персонаж.
+          </p>
+        </div>
+        <div class="col-xl-4 col-xl-offset-2">
+          <form class="message message_box" action="/thanks/callback.php" method="POST">
+            <p class="message__zag">Оставьте ваши контакты и я помогу вам подобрать нужного вам персонажа.</p>
+            <input type="hidden" name="nameservice" class="message__servise" value="Форма рядом с преимуществами" />
+            <input type="text" class="message__phone" name="name" />
+            <input type="text" class="message__input" name="nameuser" placeholder="Введите ваше имя" />
+            <input type="text" class="message__input phone-mask" name="phoneuser" placeholder="Введите ваш телефон" required />
+            <button class="button button_middle">Перезвоните</button>
+            <p class="message__policy">
+              Нажимая кнопку "Перезвоните" вы соглашаетесь с <span class="open-policy">условиями передачи данных</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-5">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="advantages">
+            <h2 class="advantages__zag">Причины заказать праздник для вашего ребенка у нас</h2>
+            <div class="advantage">
+              <img src="img/advantage-1.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">У нас только положительные отзывы</p>
+            </div>
+            <div class="advantage">
+              <img src="img/advantage-2.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">Также мы занимаемся воздушными шарами</p>
+            </div>
+            <div class="advantage">
+              <img src="img/advantage-3.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">Всегда доступные цены на детские праздники</p>
+            </div>
+            <div class="advantage">
+              <img src="img/advantage-4.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">Мы создаем не забываемые впечатления для ваших детей</p>
+            </div>
+            <div class="advantage">
+              <img src="img/advantage-5.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">У нас есть музыкальное сопровождение</p>
+            </div>
+            <div class="advantage">
+              <img src="img/advantage-6.png" alt="" class="advantage__img" />
+              <p class="advantage__zag">Мы сделем все за вас, чтобы вы не тратили время и усилия</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-6" id="comments">
+      <div class="row">
+        <div class="col-xl-8 col-xl-offset-2 col-lg-10 col-lg-offset-1">
+          <h2 class="zagolovok-h2">Отзывы наших <br /><strong>довольных клиентов</strong></h2>
+          <div class="owl-carousel-loop owl-carousel owl-theme">
+            <div class="item">
+              <div class="feedback">
+                <div class="feedback__photo">
+                  <!-- <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/1-1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/2-1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/3-1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/4-1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/5-1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  /> -->
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                </div>
+                <div class="feedback__info">
+                  <div class="feedback__info__woman">
+                    <div class="feedback__info__woman__img">
+                      <img alt="" />
+                    </div>
+                    <div class="feedback__info__woman__right">
+                      <p class="feedback__info__woman__right__name">Леся Иванова</p>
+                      <p class="feedback__info__woman__right__location">Выпускной в детском саде</p>
+                    </div>
+                  </div>
+                  <p class="feedback__info__desc">
+                    Хочу выразить огромную благодарность Наталье за проведённый праздник моей дочери в детском саду. Все прошло
+                    на высшем уровне! Детки в полном восторге! Интересная программа понравилась всем! Вы необыкновенно добрый и
+                    светлый человечек. Буду всем вас рекомендовать Успехов вам в работе!!!!
+                  </p>
+                  <p class="feedback__info__date">29 мая 2018</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback">
+                <div class="feedback__photo">
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                  <img class="cover-image" />
+                </div>
+                <div class="feedback__info">
+                  <div class="feedback__info__woman">
+                    <div class="feedback__info__woman__img">
+                      <img alt="" />
+                    </div>
+                    <div class="feedback__info__woman__right">
+                      <p class="feedback__info__woman__right__name">Екатерина Иванова</p>
+                      <p class="feedback__info__woman__right__location">Дача</p>
+                    </div>
+                  </div>
+                  <p class="feedback__info__desc">
+                    Стефании 1 годик!!! Ура! Спасибо за красивущий аэродизайн, с троллем Розочкой деткам было весело и
+                    интересно, а в научном шоу принимали участие и дети и взрослые. Обязательно еще встретимся!!!
+                  </p>
+                  <p class="feedback__info__date">10 Апреля 2019</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="item">
+              <div class="feedback">
+                <div class="feedback__photo">
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/5.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/1.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/2.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/3.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                  <img
+                    src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/4.jpg"
+                    class="zoom-js cover-image"
+                    alt=""
+                  />
+                </div>
+                <div class="feedback__info">
+                  <div class="feedback__info__woman">
+                    <div class="feedback__info__woman__img">
+                      <img
+                        src="https://novosibirsk.animatoria.ru/wp-content/uploads/2019/05/reviews__fotorama__img1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="feedback__info__woman__right">
+                      <p class="feedback__info__woman__right__name">Анастасия Якубенко</p>
+                      <p class="feedback__info__woman__right__location">Игровая комната</p>
+                    </div>
+                  </div>
+                  <p class="feedback__info__desc">
+                    У моей доченьки Дианочки было недавно пятилетие. К нам прилетала фея сладостей.) Очень хороший праздник
+                    получился. Ребенок мой был в восторге, Получили кучу положительных эмоций и именниница, и гости. Спасибо
+                    Наталье огромное.
+                  </p>
+                  <p class="feedback__info__date">10 Апреля 2019</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments-screen" id="comments-screen">
+      <div class="row">
+        <div class="col-xl-8 col-xl-offset-2 col-lg-10 col-lg-offset-1">
+          <h2 class="zagolovok-h2">Отзывы наших <br /><strong>довольных клиентов</strong></h2>
+          <div class="owl-carousel-screen owl-carousel owl-theme">
+            <div class="item">
+              <div class="feedback-screen">
+                <img alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback-screen">
+                <img alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback-screen">
+                <img alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback-screen">
+                <img alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div>
+            <!-- <div class="item">
+              <div class="feedback-screen">
+                <img src="./tmp/feedback-screen-1.jpg" alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="feedback-screen">
+                <img src="./tmp/feedback-screen-1.jpg" alt="" class="feedback-screen__photo zoom-js" />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="article">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <h2 class="zagolovok-h2">Как выбрать <strong>хорошего</strong> <strong>аниматора?</strong></h2>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xs-12">
+          <div class="article article_white">
+            <span class="article__number">1</span>
+            <p class="article__name">Цена</p>
+            <p class="article__desc">
+              Важно понимать, что дорого - это не всегда качественно, а слишком дешево - это всегда некачественно. Цена должна
+              быть средней, но она зависит от многих факторов: региона РФ, конкретного города и даже района. По нашему городу
+              средняя цена заказа аниматора со стандартной программой - 2500 рублей. Не жалейте денег на услуги аниматора,
+              потому что если Вы задумаете сами организовать что-то подобное, то потратите еще большую сумму, и нервы к тому же.
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xs-12">
+          <div class="article">
+            <span class="article__number">2</span>
+            <p class="article__name">Отзывы</p>
+            <p class="article__desc">
+              Представьте, что Вы идете в салон на коррекцию бровей к мастеру, у которого никогда не были и ничего о нем не
+              слышали и не видели его работы, кроме его же фотографий - страшно же? Поэтому делать брови мы идем по отзывам
+              наших знакомых и подруг. И здесь так же. Всегда обращайте внимание на отзывы об аниматорах, потому что лучшие
+              рекомендации могут дать только люди, которые испытали это на себе.
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xs-12">
+          <div class="article article_white">
+            <span class="article__number">3</span>
+            <p class="article__name">Опыт работы</p>
+            <p class="article__desc">
+              Обращайте внимание на то, сколько лет аниматор занимается своей работой. Конечно, если это его призвание, он может
+              стать отличным персонажем, не смотря на свой трудовой опыт. Однако в процессе своей работы аниматор познает
+              тонкости в подходах к каждому ребенку, накапливает знания, которые необходимы в работе с детьми. И тогда, человек
+              с призванием, который на протяжении нескольких лет создает незабываемые праздники детям - лучший аниматор.
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xs-12">
+          <div class="article">
+            <span class="article__number">4</span>
+            <p class="article__name">Костюмы</p>
+            <p class="article__desc">
+              Костюмы - важнейшая составляющая работы аниматора. 50% успеха в его работе кроется в его одеянии на праздник. Если
+              однажды к вам приехал неопрятный клоун, или свинка Пеппа в розовых штанах и майке - срочно ищите форумы для
+              мамочек и рассказывайте об этом другим! Будем искоренять недобросовестных аниматоров вместе. <br /><br />
+              Следуя этим четырем правилам, Вы обязательно выберете лучшего аниматора для Вашего ребеночка и тогда и он, и Вы
+              тоже будете счастливы!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="box-7">
+      <div class="row">
+        <div class="col-xl-4 col-xl-offset-4 col-lg-5 col-lg-offset-3 col-md-7 col-md-offset-2 col-sm-10 col-sm-offset-1">
+          <form class="message message_phone">
+            <p class="message__zag">Свяжитесь с нами для уточнения даты и времени праздника</p>
+            <p class="message__desc">Оставляя заявку, вас это ни к чему не обязывает</p>
+            <input type="hidden" name="nameservice" class="message__servise" value="Самая нижняя форма" />
+            <input type="text" class="message__phone" name="name" />
+            <input type="text" class="message__input" name="nameuser" placeholder="Введите ваше имя" />
+            <input type="text" class="message__input phone-mask" name="phoneuser" placeholder="Введите ваш телефон" required />
+            <button class="button button_middle">Перезвоните</button>
+            <p class="message__policy">
+              Нажимая кнопку "Перезвоните" вы соглашаетесь с <span class="open-policy">условиями передачи данных</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="/" target="_blank" class="verstka">Аниматор</a>
+    </footer>
+
+    <form class="message message_windows" action="/thanks/callback.php" method="POST">
+      <p class="message__close">Закрыть</p>
+      <p class="message__zag">Вызвать Аниматора</p>
+      <p class="message__desc">Оставьте ваши контакты и мы выберем дату и время.</p>
+      <input type="hidden" name="nameservice" class="message__servise" value="" />
+      <input type="text" class="message__phone" name="name" />
+      <input type="text" class="message__input" name="nameuser" placeholder="Введите ваше имя" />
+      <input type="text" class="message__input phone-mask" name="phoneuser" placeholder="Введите ваш телефон" required />
+      <button class="button button_middle">Перезвоните</button>
+      <p class="message__policy">
+        Нажимая кнопку "Перезвоните" вы соглашаетесь с <span class="open-policy">условиями передачи данных</span>
+      </p>
+    </form>
+
+    <a href="tel:" class="callback-mobile hidden-xl hidden-lg hidden-md hidden-sm"
+      ><img src="img/phone-receiver.png" alt=""
+    /></a>
+
+    <div class="policy">
+      <button type="button" class="policy__close">Закрыть</button>
+      <p class="policy__zag">Политика конфиденциальности сайта</p>
+      <p class="policy__desc">
+        Данная Политика конфиденциальности применима к данному Сайту. После просмотра данного Сайта обязательно прочитайте
+        текст, содержащий политику конфиденциальности используемого сайта. В случае несогласия с данной Политикой
+        конфиденциальности прекратите использование данного Сайта. Заполнив любую из форм и используя данный Сайт, Вы тем самым
+        выражаете согласие с условиями изложенной ниже Политики конфиденциальности. Сайт охраняет конфиденциальность посетителей
+        сайта. Персональная информация Для того чтобы оказывать вам услуги, отвечать на вопросы, выполнять ваши пожелания и
+        требования требуется такая информация, как ваше имя и номер телефона. САЙТ может использовать указанную информацию для
+        ответов на запросы, а также для связи с Вами по телефону с целью предоставления информации о предлагаемых САЙТ услугах и
+        рекламных кампаниях. При поступлении от вас обращения в виде отправки любой заполненной на сайте формы САЙТ может
+        потребоваться связаться с Вами для получения дополнительной информации, необходимой для вашего обслуживания и ответа на
+        интересующие вопросы. САЙТ обязуется не передавать данную информацию третьим лицам без Вашего разрешения, за исключением
+        информации, необходимой для выполнения вашего обслуживания. Со своей стороны, Вы предоставляете САЙТ право использовать
+        любую сообщѐнную Вами информацию для выполнения указанных выше действий.
+      </p>
+      <p class="policy__zag">Безопасность</p>
+      <p class="policy__desc">
+        Передача персональных данных в любой форме (лично, по телефону или через Интернет) всегда связана с определенным риском,
+        поскольку не существует абсолютно надежных (защищенных от злонамеренных посягательств) систем, однако САЙТ принимает
+        необходимые адекватные меры для минимизации риска и предотвращения несанкционированного доступа, несанкционированного
+        использования и искажения Ваших персональных данных. Несовершеннолетние САЙТ не принимает никакой информации от лиц
+        моложе 18 лет без согласия их родителей или законных опекунов. Кроме того, лица моложе 18 лет не могут совершать
+        каких-либо покупок или иных юридических действий на данном Сайте без согласия родителей или законных опекунов, если это
+        не допускается законодательством Российской Федерации.
+      </p>
+      <p class="policy__zag">Модификация</p>
+      <p class="policy__desc">
+        САЙТ имеет право изменять данную Политику конфиденциальности, изменять и корректировать условия доступа или запрещать
+        доступ к сайту, а также изменять его содержание в любое время без предварительного уведомления.
+      </p>
+      <p class="policy__desc">Сайт ни при каких обстоятельствах не является публичной офертой.</p>
+    </div>
+
+    <div class="emerge">
+      <button class="emerge__close"></button>
+      <p class="emerge__zag">Не нашли нужного персонажа?</p>
+      <p class="emerge__text">
+        На сайте все персонажи не вмещаются, из-за этого сайт получается очень большим, оставьте ваш телефон и мы перезвоним вам
+        в течениии 15 минут для уточнения нужного вам персонажа.
+      </p>
+      <button class="button message_windows-open">Помочь</button>
+    </div>
+
+    <script>
+      function yandexMetrikaTarget() {
+        ym(47828695, 'reachGoal', 'form')
+      }
+    </script>
+
+    <!-- <script src="js/common.min.js?v-93"></script> -->
+    <script src="./js/common.js?v-98"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.6" height="72" viewBox="0 0 76.6 72">
+  <g id="Group_8" data-name="Group 8" transform="translate(1.6)">
+    <g id="Rectangle" transform="translate(3)" fill="#edf0ff" stroke="#edf0ff" stroke-miterlimit="10" stroke-width="3.2">
+      <rect width="72" height="72" rx="32" stroke="none"/>
+      <rect x="1.6" y="1.6" width="68.8" height="68.8" rx="30.4" fill="none"/>
+    </g>
+    <path id="Rectangle-2" data-name="Rectangle" d="M0,12,36,0V32L0,20Z" transform="translate(10 6)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+    <path id="Rectangle-3" data-name="Rectangle" d="M0,4-10,0V16L0,12Z" transform="translate(10 14)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+    <path id="Path_3" data-name="Path 3" d="M15.753,5.809S16.4,16.187,6.282,16.187C-1.6,16.187.4,0,.4,0" transform="translate(9.595 26)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+    <path id="Line_6" data-name="Line 6" d="M.5.5h31" transform="translate(30 50)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+    <path id="Line_6-2" data-name="Line 6" d="M.188.5H11.813" transform="translate(40 60)" fill="none" stroke="#2548f6" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3.2"/>
+  </g>
+</svg>
